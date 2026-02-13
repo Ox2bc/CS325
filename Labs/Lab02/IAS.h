@@ -1,3 +1,6 @@
+#ifndef IAS_H
+#define IAS_H
+
 #include "Memory.h"
 #include <stdexcept>
 
@@ -94,3 +97,5 @@ namespace cal
 
 	};
 }
+
+#endif
