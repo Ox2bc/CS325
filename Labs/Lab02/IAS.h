@@ -1,7 +1,10 @@
 #ifndef IAS_H
 #define IAS_H
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 #include "Memory.h"
@@ -119,7 +122,11 @@ namespace cal
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #endif
+=======
+#endif IAS_H
+>>>>>>> Stashed changes
 =======
 #endif IAS_H
 >>>>>>> Stashed changes
