@@ -1,0 +1,53 @@
+Michael Frid - CS325 - EXAM #1
+
+1. Provide the full name and purpose of all the registers of the IAS computer.
+    - Program Counter (PC): Contains the address of the next instruction which will be fetched
+    - Instruction Register (IR): Contains the opcode instruction being exectuted
+    - Instruction Buffer Register (IBR): Temporarily holds right-hand instruction
+    - Memory Address Register (MAR): Specifies the address in memory to be written/read from MBR
+    - Memory Buffer Array (MBR): Contains a word to either I/O or store/retrieve from memory
+    - Accumulator Register (AC): Employed to hold operations and results of ALU (Accounting and Logic Unit).
+    - Multiply/Quotient Register (MQ): Holds operations and results of ALU (Accounting and Logic Unit).
+2. Convert each of the following numbers to the requested base. You must show work to recieve full credit.
+    a. E6A9B_{16} to binary -> E = 1110, 6 = 0110, A = 1010, 9 = 1001, B = 1011 -> E6A9B_{16} = 11100110101010011011_{2}
+    b. 101101_{2} to decimal -> 1(1) + 0(2) + 1(4) + 1(8) + 0(16) + 1(32) = 1 + 4 + 8 + 32 = 45_{10}
+    c. 10011110101110_{2} to hexadecimal -> 0010 = 2, 0111 = 7, 1010 = A, 1110 = E -> 10011110101110_{2} = 27AE_{16}
+    d. 87_{10} to binary -> 64 < 87 < 128 (so 7 digis) -> 1(64) + 0(32) + 1(16) + 0(8) + 1(4) + 1(2) + 1(1) -> 1010111_{2} 
+3. Find the twos-complement of each binary number. You must show work to receive full credit.
+    a. 001000011000 -> 110111100111 + 1 -> 110111101000
+    b. 110001001000 -> 001110110111 + 1 -> 001110111000
+    c. 011101001001 -> 100010110110 + 1 -> 100010110111
+    d. 101001010000 -> 010110101111 + 1 -> 010110110000
+4. Write an IAS program, in hexadecimal, of the statement below, given L, M, and N are the addresses C3, 44, and 2D, respectively.
+    L=\frac{N(2N+3)}{M}
+    Store 3 at 2F
+    000: 0102D0502F
+    001: 2100300000
+    002: 0902D0B030
+    003: 0A0000C044
+    004: 0A000210C3
+5. Using the list of instruction commands below, trace the following code, starting from adress 000, by listing equential changes to the registers and memory.
+    000. PC = 000
+    001. MAR = 000
+    002: MBR = M(MAR) = 0100505006
+    003: IR = 01005
+    004: IBR = 05006
+    005: PC = 001
+    006: PC = 002
+    007: MAR = 002
+    008: MBR = 090050B007
+    009: IR = 09005
+    010: IBR = 0B007
+    011: PC = 003
+    012: PC = 004
+    013: MAR = 004
+    014: MBR = 2100500000
+    015: IR = 21005
+    016: IBR = 00000
+    017: PC = 005
+    018: PC = 006
+    019: MAR = 006
+    020: MBR = 000000001E
+    021: IR = 00000
+    022: IBR = 0001E
+    023: PC = 007
