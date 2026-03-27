@@ -31,7 +31,7 @@ int main()
 	std::cout << "The partial is now " << p << "\n";
 	std::cout << "The partial as an unsigned integer is " << value(p) << "\n";
 	std::cout << "The word afterward is " << w << "\n";
-	*/
+	
 
 	cal::BusCom b(10,6,2);
 	cal::Part p[3];
@@ -52,5 +52,18 @@ int main()
 	}
 
 	std::cout << "\nThe bus is now " << b << "\n";
+	*/
+	cal::Word* locs;
+
+	locs = new cal::Word[256];
+
+	for(size_t i = 0;i < 256;i += 1) {locs[i] = cal::Word(16);}
+
+	for(size_t i = 0;i < 256;i += 1)
+	{
+		std::cout << i << ": " << locs[i] << "\n";
+	}
+
+	delete[] locs;
 	return 0;
 }
