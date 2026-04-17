@@ -1,0 +1,6 @@
+Define what a bus is, identify its components, and explain the purpose of each component.
+-------------------------------------------
+
+A bus is a computer component which allows different components to communicate with each other. It consists of the Address Bus, the Data Bus, and the Control Bus.
+
+The Address Bus transports memory addresses accross the computer. The Data Bus functions similarly, but for actual data between memory locations, the CPU, and other components. The Control Bus sends signals from the CPU to synchronize proceses. 
