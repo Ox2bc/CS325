@@ -1,0 +1,10 @@
+3. Write an IAS program, in hexadecimal, implementing the statement below, given that L, M, and N are at addresses D7, 1B, and C3, respectively.
+
+
+000     | 0AC                | 309C3
+001     | 14005              | 0AD7
+002     | 090                | 0C1B
+003     | 21D7               | 000
+004     | 000                | 000
+005     | 0AD7               | 090
+006     | 0CC3               | 21D7

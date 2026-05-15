@@ -1,0 +1,12 @@
+4. Trace your solution starting from address 000, by listing all sequential changes to registers and memory, given the inital values.
+
+Step | PC  | Instruction    | AC (hex)    | MQ (hex)    
+-----|-----|----------------|-------------|-------------
+0    | 000 | Initial        | 0000000000  | 0000000000  
+1    | 000 | LOAD M(C3)     | 000000000F  | 0000000000 
+2    | 000 | SUB M(1B)      | 0000000005  | 0000000000
+3    | 001 | JUMP+ M(005)   | 0000000005  | 0000000000 
+4    | 005 | LOAD M(D7)     | 000000001B  | 0000000000
+5    | 005 | LSH            | 0000000036  | 0000000000 
+6    | 006 | ADD M(C3)      | 0000000045  | 0000000000 
+7    | 006 | STOR M(D7)     | 0000000045  | 0000000000 

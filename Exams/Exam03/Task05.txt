@@ -1,0 +1,26 @@
+5. Simulate the LRU page replacement algorithms using a chace of size 3 on the following sequence:
+
+(7 1 4 2 8 6 6 2 5 4 7 8 4 5 6 2 4 4 1 6)
+
+ 7:  [] -> [7]             (Has empty space)
+ 1:  [7] -> [1,7]          (Has empty space)                  
+ 4:  [1,7] -> [4,1,7]      (Has empty space)                
+ 2:  [4,1,7] -> [2,4,1]    (evict 7)      
+ 8:  [2,4,1] -> [8,2,4]    (evict 1)
+ 6:  [8,2,4] -> [6,8,2]    (evict 4)
+ 6:  [6,8,2] -> [6,8,2]    (6 already in cache)
+ 2:  [6,8,2] -> [2,6,8]    (2 moves to the front)
+ 5:  [2,6,8] -> [5,2,6]    (evict 8)
+ 4:  [5,2,6] -> [4,5,2]    (evict 6)
+ 7:  [4,5,2] -> [7,4,5]    (evict 2)
+ 8:  [7,4,5] -> [8,7,4]    (evict 5)
+ 4:  [8,7,4] -> [4,8,7]    (4 moves to the front)
+ 5:  [4,8,7] -> [5,4,8]    (evict 7)
+ 6:  [5,4,8] -> [6,5,4]    (evict 8)
+ 2:  [6,5,4] -> [2,6,5]    (evict 4)
+ 4:  [2,6,5] -> [4,2,6]    (evict 5)
+ 4:  [4,2,6] -> [4,2,6]    (4 already in cache)
+ 1:  [4,2,6] -> [1,4,2]    (evict 6)
+ 6:  [1,4,2] -> [6,1,4]    (evict 2)
+
+ Final: [6,1,4]

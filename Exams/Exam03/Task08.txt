@@ -1,0 +1,11 @@
+8. Simplify the POS circuit for Boolean function F2 using Boolean algebra postulates below and/or a Karnaugh Map.
+
+F2 POS: (A' + B' + C)(A' + B + C)(A + B + C')(A + B + C)
+
+- (A' + B' + C)(A' + B + C)(A + B + C')(A + B + C)
+- (A' + C)(B' + B)(A + B + C')(A + B + C)
+- (A' + C)(1)(A + B + C')(A + B + C)
+- (A' + C)(A + B)(C' + C)
+- (A' + C)(A + B)
+
+ANSWER: (A' + C)(A + B)

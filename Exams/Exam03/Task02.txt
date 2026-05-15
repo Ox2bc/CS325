@@ -1,0 +1,18 @@
+2. Find the solution of each binary expression and state if overflow occurs. You must show work to recieve full credit.
+
+a. 00110111 + 01011110 ->
+
+    1111111
+    00110111
+  + 01011110
+  ----------
+    10010101  
+    OVERFLOW OCCURS   
+
+b. 11001100 - 01100011 -> 11001100 + 10011101 ->
+
+    11001100  
+  + 10011101
+  ----------
+ (1)01100001
+    NO OVERFLOW 

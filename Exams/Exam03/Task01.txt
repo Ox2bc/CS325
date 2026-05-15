@@ -1,0 +1,6 @@
+1. Convert each of the following binary numbers to their 12-bit twos-complement negation. The inverstion and the final outcome must be provided to receive full credit. If a binary number has fewer than 12 bits, its most significant bits are 0.
+
+a. 000000110100 -> 111111001011 -> 111111001100
+b. 001001011000 -> 110110100111 -> 110110101000
+c. 000000001101 -> 111111110010 -> 111111110011
+d. 001001111001 -> 110110000110 -> 110110000111
